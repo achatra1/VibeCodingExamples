@@ -1,0 +1,60 @@
+I prototyped a Revenue Adjustments workflow in Lovable for a requirements brainstorming session with my team. Use this example to copy into a Vibe code tool and see it come to life:
+
+This is intentionally straightforward—something every Finance team understands.
+
+The workflow today: An analyst wants to submit a revenue adjustment for $12,000 because a customer invoice was posted to the wrong product line.
+They fill a form, attach support, email the controller, wait for feedback, redo fields… lots of back-and-forth. Its simple in paper but when you work through the product requirements, every team imagines this flow differently. Let’s see how we would Vibe code this to bring in clarity:
+
+Here’s what you might prototype in 4 minutes:
+
+Prompt: You are an internal Finance AI assistant helping Accounting teams create revenue adjustment drafts.Your outputs must be auditable, deterministic, structured, and safe for a corporate Finance environment.No guessing. No hallucinated numbers. Use only the sample data provided.
+
+Create a vibe-coded prototype of a Revenue Adjustment Request Template including:
+Input section (what the analyst fills)
+AI-generated draft summary
+Validation checks (materiality, support completeness, multi-entity impact)
+Suggested explanation wording
+Reviewer actions (Approve / Edit / Request Evidence)
+Audit trail fields (timestamps, user ID placeholders)
+Two alternative layout styles (Structured Table + Narrative Form)
+Make this a practical, simple prototype that Finance teams can react to.
+Structure the Output as Follows
+
+1. Analyst Input Form (Mock UI)
+Show fields with sample values pre-filled:
+Amount
+Adjustment Direction
+Product Line (current vs corrected)
+Supporting Documentation Required
+Free-text explanation
+Risk flags
+
+2. AI Drafted Adjustment Summary
+A structured template including:
+Adjustment Overview
+Reason for Adjustment
+Customer & Contract Reference
+Supporting Evidence List
+Auto-Checks (materiality, duplicates, multi-entity impact)
+
+3. Reviewer Panel (Mocked Buttons)
+Represent the workflow flow:
+Decision ( Approve/Reject with logs timestamp + reviewer ID)
+Comment
+Approved by
+
+Include Audit fields like 
+“Created By:”
+“Created On:”
+“Reviewed By:”
+“Reviewed On:”
+“Evidence Attached:”
+“Adjustment ID:”
+
+Tone Requirements
+Compliance-safe
+No speculation or invented reasoning
+Clear, factual, neutral
+Use short sentences and readable formatting
+
+“Generate the vibe-coded prototype now.”
